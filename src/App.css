@@ -1,38 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fuggles&family=Merriweather:ital,wght@1,300&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@500&family=Raleway:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fuggles&family=Merriweather:ital,wght@1,300&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@500&family=Raleway:ital,wght@1,100&family=Sedgwick+Ave+Display&display=swap');
 .App {
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  position: sticky;
+  display: flex;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.q-name{
+  font-family: 'Fuggles', cursive;
+  font-size:4rem;
+  background-position: center;
+  background-size: cover;
+  color:white;
+  font-weight: 1000;
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/22/08/20/gods-creation-5328278_1280.png");
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainImg{
+  min-height:15rem;
+  background-image:url("https://cdn.pixabay.com/photo/2022/03/03/07/14/numbers-7044738_1280.jpg");
+ background-position: center;
+ background-size: cover; 
+ overflow:auto;
+ background-repeat:repeat-x;
+  padding: 0;
+  margin: 0;
+}
+.mainImg p{
+  font-size:4rem;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+.main-inp form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  row-gap: 2rem;
+  max-width:60rem;
+  padding:2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.s:hover{
+opacity: 0.5;
 }
+.f option{
+  background-color: black;
+  color: antiquewhite;
+}
+.s{
+  border: none;
+  border-radius: 20px;
+  opacity: 0.9;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 600;
+  height:50px;
+}
+.f{
+  border: none;
+  border-radius: 20px;
+  opacity: 0.5;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 600;
+  height:50px;
+}
+.main-inp{
+  background-image:url("https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.field{
+  font-family:serif;
+  margin-bottom: 4%;
+  margin-top: 1%;
+  background-color: #a687c8;
+  margin-left:16%;
+  margin-right:16%;
+  font-size: 25px;
+  border:none;
+  background-image: linear-gradient(to right, #3db0a3, #aec782);
+}
+#sel{
+  border-radius: 15px;
+  border:none;
+  padding:1%;
+  font-size:20px;
+  background-color: black;
+  color: aliceblue;
+}
+#button:hover{
+  color:black;
+  background-color: white;
+}
+.report{
+  color:coral;
+  font-size: 50px;
+  font-family: 'Fuggles', cursive;
+}
+.score{
+  color:white;
+}
+#button{
+  font-size:20px;
+  margin:4%;
+  padding: 0.5%;
+  border:0.1px solid white;
+  color: azure;
+  background-color: black;
+}
+.head{
+  color:white;
+
+}
+#button:hover{
+  background-color: blanchedalmond;
+  color:black;
+}
+.head{
+  font-family: 'Fuggles', cursive;
+  font-size:50px;
+  color:#a687c8
+}
+.question{
+  overflow: auto;
+  min-height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 1%;
+}
+.main{
+  box-sizing: border-box;
+  background-color:black;
+  min-height: 100vh;
+  height: fit-content;
+  margin: 0;
+}
+.center{
+  padding:1%;
+  display: grid; 
+  grid-template-rows: repeat( auto-fill, minmax(100px, 1fr));
+}
+.q{
+  font-weight: bold;
+}
+.cont{
+  font-family:cursive;
+  font-weight:500;
+  font-size:20px;
+  border-radius:8px;
+  border:none;
+  background-color: #F4D03F;
+background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+  color:black;
+  margin-left: 4%;
+  margin-right:4%;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+.cont span{
+  color:white;
+}
+.center{
+  border:none;
 }
