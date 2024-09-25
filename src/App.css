@@ -97,7 +97,7 @@ opacity: 0.5;
   background-color: white;
 }
 .report{
-  color:coral;
+  color:white;
   font-size: 50px;
   font-family: 'Fuggles', cursive;
 }
@@ -134,10 +134,14 @@ opacity: 0.5;
 }
 .main{
   box-sizing: border-box;
-  background-color:black;
+  background-image:url("https://images.unsplash.com/photo-1562575214-da9fcf59b907?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+  background-position: center;
+  background-repeat:repeat-y;
+  background-size: cover;
   min-height: 100vh;
-  height: fit-content;
+  /* height: fit-content; */
   margin: 0;
+  padding:10px;
 }
 .center{
   padding:1%;
@@ -145,7 +149,18 @@ opacity: 0.5;
   grid-template-rows: repeat( auto-fill, minmax(100px, 1fr));
 }
 .q{
+  color:aqua;
   font-weight: bold;
+}
+.score{
+  font-family: cursive;
+  font-size:40px;
+}
+.footer{
+  font-weight:600;
+  color:red;
+  font-family: 'Fuggles', cursive;
+  font-size:40px;
 }
 .cont{
   font-family:cursive;
@@ -153,16 +168,15 @@ opacity: 0.5;
   font-size:20px;
   border-radius:8px;
   border:none;
-  background-color: #F4D03F;
-background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
-  color:black;
+  background-color:black;
+  color:white;
   margin-left: 4%;
   margin-right:4%;
   margin-top:2%;
   margin-bottom:2%;
 }
 .cont span{
-  color:white;
+  color:blue;
 }
 .center{
   border:none;

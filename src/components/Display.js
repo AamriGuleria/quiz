@@ -3,17 +3,17 @@ import { useState ,useEffect} from 'react'
 import {useLocation} from "react-router-dom"
 const Display = () => {
     const location=useLocation()
-    const [score,setscore]=useState(0)
+    const [aam,setaam]=useState([])
     let arr=location.state;
     let a=arr.correct
     let b=arr.userans;
     let c=arr.quest;
+    let score=arr.score
+    function func(a,b){
+      console.log(score)
+    }
     useEffect(()=>{
-      for(let i=0;i<a.length;i++){
-        if(a[i]===b[i]){
-          setscore(score+1);
-        }
-      }
+      func(a,b);
     },[a,b])
   return (
     <div className="main">
@@ -37,6 +37,7 @@ const Display = () => {
       }
       </center>
       <p className="score">Your score is {score} out of {a.length}</p>
+      <p className="footer">Keep Playing! Keep Going!🤍</p>
     </div>
   )
 }

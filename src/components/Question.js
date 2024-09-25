@@ -4,6 +4,8 @@ const Question = () => {
   const [quest,setquest]=useState();
   const [userans,setuserans]=useState([])
   const [correct,setcorrect]=useState([])
+  let score=0;
+  const [f,setf]=useState([])
     const location=useLocation()
     const navigate=useNavigate()
     let arr=location.state.data.results
@@ -26,9 +28,21 @@ const Question = () => {
       }
     },[arr])
     const main=()=>{
-      console.log(userans)
+      console.log(userans);
+  
+  // Reset score to 0 before recalculating
+  score = 0;
+  
+  // Loop through the user's answers and compare them with the correct answers
+  for (let i = 0; i < userans.length; i++) {
+    if (userans[i] === correct[i]) {
+      score = score + 1;
+    }
+  }
+
+  console.log(score);
       setTimeout(()=>{
-        navigate('/display',{state:{userans,correct,quest}})
+        navigate('/display',{state:{userans,correct,quest,score}})
       },200)
     }
     function shuffleArray(array) {
